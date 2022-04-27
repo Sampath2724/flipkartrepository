@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+	<parameter name="username1" value="8297108555" />
+	<parameter name="password1" value="14111984" />
+	<parameter name="username2" value="8297" />
+	<parameter name="password2" value="%%%%%***(#" />
+
+	<test name="Login">
+		<classes>
+			<class name="com.flipkart.test.LoginTest" />
+			<class name="com.flipkart.test.LogoutTest" />
+			<class name="com.flipkart.test.LoginInvalidTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Add to cart">
+		<classes>
+			<class name="com.flipkart.test.AddToCartTest" />
+			<class name="com.flipkart.test.PlaceOrderTest" />
+			<class name="com.flipkart.test.AddToCartInvalidTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
