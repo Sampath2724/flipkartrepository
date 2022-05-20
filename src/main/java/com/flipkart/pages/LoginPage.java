@@ -2,6 +2,7 @@ package com.flipkart.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,27 +31,33 @@ public class LoginPage extends BasePage {
 	
 	public void setEmail(String email)
 	{
-		explicitWait(txtBoxEmail);
+		//explicitWait(txtBoxEmail);
 		txtBoxEmail.click();
 		txtBoxEmail.clear();
+		
 		txtBoxEmail.sendKeys(email);
 	}
 	public void setPassword(String password)
 	{
-		explicitWait(txtBoxpassword);
+		//explicitWait(txtBoxpassword);
 		txtBoxpassword.click();
 		txtBoxpassword.clear();
 		txtBoxpassword.sendKeys(password);
 	}
 	public void clickOnLogin()
 	{
-		explicitWait(btnLogin);
+		//explicitWait(btnLogin);
 		btnLogin.click();
 	}
 	public String invalidMessageUserPassword()
 	{
-		explicitWait(txtInvalidValidation);
+		//explicitWait(txtInvalidValidation);
 		return txtInvalidValidation.getText();
 	}
+    public static void PopulateElementJs(WebDriver driver, WebElement element, String text)
+    {
+        String script = "arguments[0].value=' " + text + " ';";
+        ((JavascriptExecutor)driver).executeScript(script, element);
+    }
 }
 

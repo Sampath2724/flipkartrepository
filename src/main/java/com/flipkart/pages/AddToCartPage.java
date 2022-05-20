@@ -1,5 +1,7 @@
 package com.flipkart.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +31,7 @@ public class AddToCartPage extends BasePage {
 		//explicitWait(txtBoxSearch);
 		txtBoxSearch.click();
 		txtBoxSearch.clear();
+		//PopulateElementJs(driver, txtBoxSearch, "😄");
 		txtBoxSearch.sendKeys(productname);
 	}
 
@@ -48,4 +51,11 @@ public class AddToCartPage extends BasePage {
 		explicitWait(btnAddToCart);
 		btnAddToCart.click();
 	}
+	 public static void PopulateElementJs(WebDriver driver, WebElement element, String text)
+	    {
+	        String script = "arguments[0].value=' " + text + "iphone ';";
+	        ((JavascriptExecutor)driver).executeScript(script, element);
+	        element.sendKeys(Keys.ENTER);
+	        }
+
 }

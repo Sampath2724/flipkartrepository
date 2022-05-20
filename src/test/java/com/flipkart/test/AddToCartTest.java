@@ -17,12 +17,22 @@ public class AddToCartTest extends BaseTest{
 		login.setEmail("8297108555");
 		login.setPassword("14111984");
 		login.clickOnLogin();
+		try {
+			/*
+			 * this.emulateNetworkConditionTest(); Thread.sleep(10000);
+			 * this.emulateNetworkConditionSlowTest(); driver.navigate().refresh();
+			 */
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@Test(priority=1)
 	public void addProductToCart() throws InterruptedException
 	{
 		AddToCartPage cart=new AddToCartPage(driver);
 		cart.searchForProduct("iphone");
+		this.emulateNetworkConditionFastTest();
 		cart.clickOnSearchButton();
 		cart.productSelect();
 		moveToNewTab();
