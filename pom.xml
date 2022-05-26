@@ -27,6 +27,8 @@
 
 
 	</dependencies>
-
+<suiteXmlFiles>
+						<suiteXmlFile>TestNG.xml</suiteXmlFile>
+					</suiteXmlFiles>
 
 </project>
