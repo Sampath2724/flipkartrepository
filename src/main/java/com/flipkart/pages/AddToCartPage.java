@@ -49,7 +49,7 @@ public class AddToCartPage extends BasePage {
 
 	public void clickOnAddTOCartButton() throws InterruptedException {
 		explicitWait(btnAddToCart);
-		btnAddToCart.clic();
+		btnAddToCart.click();
 	}
 	 public static void PopulateElementJs(WebDriver driver, WebElement element, String text)
 	    {
