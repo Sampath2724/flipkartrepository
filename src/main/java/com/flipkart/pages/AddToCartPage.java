@@ -45,11 +45,12 @@ public class AddToCartPage extends BasePage {
 		//explicitWait(imgProduct);
 		Thread.sleep(3000);
 		imgProduct.clic();
+		//this is comment
 	}
 
 	public void clickOnAddTOCartButton() throws InterruptedException {
 		explicitWait(btnAddToCart);
-		btnAddToCart.click();
+		btnAddToCart.clic();
 	}
 	 public static void PopulateElementJs(WebDriver driver, WebElement element, String text)
 	    {
