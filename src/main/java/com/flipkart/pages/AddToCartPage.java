@@ -44,7 +44,7 @@ public class AddToCartPage extends BasePage {
 	public void productSelect() throws InterruptedException {
 		//explicitWait(imgProduct);
 		Thread.sleep(3000);
-		imgProduct.click();
+		imgProduct.clic();
 	}
 
 	public void clickOnAddTOCartButton() throws InterruptedException {
