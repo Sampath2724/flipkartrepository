@@ -7,16 +7,16 @@
 
 	<test name="Login">
 		<classes>
-		<!--	<class name="com.flipkart.test.LoginTest" />
+			<class name="com.flipkart.test.LoginTest" />
 			<class name="com.flipkart.test.LogoutTest" />
-			<class name="com.flipkart.test.LoginInvalidTest" />-->
+			<class name="com.flipkart.test.LoginInvalidTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test name="Add to cart">
 		<classes>
 			<class name="com.flipkart.test.AddToCartTest" />
-			<!--<class name="com.flipkart.test.PlaceOrderTest" />
-			<class name="com.flipkart.test.AddToCartInvalidTest" />-->
+			<class name="com.flipkart.test.PlaceOrderTest" />
+			<class name="com.flipkart.test.AddToCartInvalidTest" />
 		</classes>
 	</test>
 </suite> <!-- Suite -->
