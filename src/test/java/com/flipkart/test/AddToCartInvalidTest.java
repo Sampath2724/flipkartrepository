@@ -29,7 +29,7 @@ public void searchProductWithoutSearchData() throws InterruptedException
 public void searchProductWithOnlySpecialCharInSearchData() throws InterruptedException
 {
 	AddToCartPage cart=new AddToCartPage(driver);
-	cart.searchForProduct("%$%$^$^$^$^$^$^$^$^");
+	cart.searchForProduct("%$%$^$^$^$^$^$^$^");
 	cart.clickOnSearchButton();
 }
 @Test(priority=3)
